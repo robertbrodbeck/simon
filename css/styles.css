@@ -1,0 +1,82 @@
+/*****  Global Styles   *****/
+
+body {
+    background-color: #011f3f;
+    text-align: center;
+}
+
+/*****  Class Styles    *****/
+
+.blue {
+    background-color: blue;
+}
+
+.color-button {
+    border: 10px solid black;
+    border-radius: 20%;
+    height: 200px;
+    width: 200px
+}
+
+.footer {
+    margin: 3%;
+    font-family: 'Press Start 2P', cursive;
+    color: #fef2bf;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.green {
+    background-color: green;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.start-button {
+    color: #fef2bf;
+    font-family: 'Press Start 2P', cursive;
+    margin: 1rem;    
+}
+
+.start-button:hover {
+    background-color: green;
+    color: yellow;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/*****  ID Styles   *****/
+
+#level-title {
+    color: #fef2bf;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin: 3%;
+}
+
+/*****  Media Querys    *****/
+
+/*****  Change content size @ <= 450px  *****/
+@media screen and (max-width: 450px) {
+
+    #level-title {
+        font-size: 1.5rem;
+    }
+
+    .color-button {
+        height: 150px;
+        width: 150px;
+    }
+}

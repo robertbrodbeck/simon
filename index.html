@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    
+    <!-----     Start Head     ----->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon</title>
+
+    <!-----     Bootstrap 5     ----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-----     Google Fonts    ------>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+    <!-----     Custom css      ------>
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+
+  <!-----      End Head     ----->
+
+  <!-----      Start Body   ----->
+
+  <body>
+    
+    <section id="game-board">
+
+        <!--    H1 to hold level and other output for the user  -->
+        <h1 id="level-title">Click Start To Play!</h1>
+
+        <!--    Responsive container that holds 2 rows with 2 columns each that make up the button board     -->
+        <div class="container ">
+
+            <!--    First Row    -->
+            <div class="row justify-content-center">
+                <div class="col col-xxl-2 col-xl-3 col-lg-6 my-3">
+                    <div type="button" id="green" class="btn green color-button"></div>
+                </div>
+                <div class="col col-xxl-2 col-xl-3 col-lg-6 my-3">
+                    <div type="button" id="red" class="btn red color-button"></div>
+                </div>
+            </div>
+
+            <!--    Second Row    -->
+            <div class="row justify-content-center">
+                <div class="col col-xxl-2 col-xl-3 col-lg-6 my-3">
+                    <div type="button" id="yellow" class="btn yellow color-button"></div>
+                </div>
+                <div class="col col-xxl-2 col-xl-3 col-lg-6 my-3">
+                    <div type="button" id="blue" class="btn blue color-button"></div>
+                </div>
+            </div>            
+        </div>
+
+        <!--    Full width container holding the start game button  -->
+        <div class="container-fluid">
+            <button class="btn btn-outline-light btn-lg start-button">Start!</button>
+        </div>
+
+    </section>
+
+    <h2 class="footer">By Robert Brodbeck</h2>
+
+    <!-----     Bootstrap 5 JS     ----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-----     JQuery      ------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-----     Custom JS     ------>
+    <script src="JS/game.js" charset="utf-8"></script>
+  </body>
+
+  <!-----      End Body    ----->
+</html>
